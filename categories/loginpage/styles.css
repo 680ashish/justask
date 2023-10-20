@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 0;
+}
+.boat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .wavy-boat {
+    position: relative;
+    width: 200px;
+    bottom: 0;
+    animation: boatWave 1.5s linear infinite alternate; /* Apply the boatWave animation */
+    transform-origin: center bottom;
+  }
+  
+  @keyframes boatWave {
+    0% {
+      transform: translateY(0) rotate(-2deg);
+    }
+    100% {
+      transform: translateY(-10px) rotate(2deg); /* Adjust the values for the wave effect */
+    }
+  }
+  
+section
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:5%;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color:#aa71ff;
+    overflow: hidden;
+}
+section .wave
+{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(./wave.png);
+    background-size: 1000px 100px;
+
+}
+section .wave.wave1
+{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 0.99;
+    animation-delay: 0s;
+    bottom: 0;
+}
+section .wave.wave2
+{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+section .wave.wave3
+{
+    animation: animate3 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+section .wave.wave4
+{
+    animation: animate4 10s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+section .wave.wave5
+{
+    animation: animate5 5s linear infinite;
+    z-index: 995;
+    opacity: 0.3;
+    animation-delay: -3s;
+    bottom: 25px;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x:1000px;
+    }
+}
+@keyframes animate2
+{
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x:-1000px;
+    }
+}
+@keyframes animate3
+{
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x:-1000px;
+    }
+}
+@keyframes animate4
+{
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x:-1000px;
+    }
+}
+@keyframes animate5
+{
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x:-1000px;
+    }
+}
+
+
+/* .logo{
+    position: relative;
+    display: flex;
+      
+}
+div img{
+    width: 200px; 
+    height: auto;
+    
+    z-index: -20;
+} */
+/* here comes the login page */
+
+
+
+input {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container {
+    /* border: 3px solid red; */
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    min-height: 50vh;
+    overflow: hidden;
+    
+  }
+  
+  .forms-container {
+    /* border: 3px solid rgb(0, 94, 255); */
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    top: 0;
+    left: 0;
+  }
+  
+
+  
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+  }
+  
+
+  .title {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+  }
+  
+
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+
+  
+  
+  .btn {
+    width: 150px;
+    background-color: #aa71ff;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .btn:hover{
+    background-color: #6923d0;
+  }
+/* Styles for the login success popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: -100%; /* Start above the viewport */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+    opacity: 0; /* Start with opacity 0 (hidden) */
+    animation: slideIn 0.5s ease-in-out forwards, slideOut 500s ease-in-out 500s forwards; /* Apply the slide-in and slide-out animations */
+    border-radius: 12px; /* Add rounded borders */
+}
+
+/* Animation keyframes for slide-in */
+@keyframes slideIn {
+    0% {
+        top: -100%; /* Start above the viewport */
+        opacity: 0;
+    }
+    100% {
+        top: 0; /* Slide down to the top of the viewport */
+        opacity: 1;
+    }
+}
+
+/* Animation keyframes for slide-out */
+@keyframes slideOut {
+    0% {
+        top: 0; /* Start at the top of the viewport */
+        opacity: 1;
+    }
+    100% {
+        top: -100%; /* Slide back above the viewport */
+        opacity: 0;
+    }
+}
+
+/* Other styles for your page */
+/* ... */
+
+
+
+
+/* ... */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section {
+        height: 40vh; 
+    }
+
+    section .wave {
+        height: 50px;
+        background-size: 500px 50px; 
+    }
+
+    .wavy-boat {
+        width: 200px; 
+
+        margin-top: 24%;
+    }
+    .container{
+        min-height:48vh;
+    }
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 1200px) {
+    section {
+        height: 60vh; /* Adjust the section height for larger screens */
+    }
+
+    .wavy-boat {
+        width: 300px; /* Adjust the boat size for larger screens */
+        
+    }
+}

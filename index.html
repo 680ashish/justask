@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>justask</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div class="temp">
+                    <a href="#" class="nav__link nav__logo">
+                        <i class='bx bxs-disc nav__icon' ></i>
+                        <span class="nav__logo-name temp">JustAsk</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle ">Profile</h3>
+    
+                            <a href="#" class="nav__link active">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name temp">Home</span>
+                            </a>
+                            
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-user nav__icon' ></i>
+                                    <span class="nav__name temp">Your Profile</span>
+                                </a>
+
+                            </div>
+
+                            <a href="#" class="nav__link">
+                                <!-- <i class='bx bx-message-rounded nav__icon' ></i> -->
+                                <i class='bx bx-book-content nav__icon' ></i>
+                                <span class="nav__name temp">Appointment</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle ">Menu</h3>
+    
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-compass nav__icon' ></i>
+                                    <span class="nav__name temp">Explore</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="/categories/explore/html-forum.html" class="nav__dropdown-item temp"  onclick="openHtmlPageInDiv(event)">Find Doctors</a>
+                                        <a href="/categories/explore/css-forum.html" class="nav__dropdown-item temp"  onclick="openHtmlPageInDiv(event)">Video Consult</a>
+                                        <a href="/categories/explore/javascript-forum.html" class="nav__dropdown-item temp"  onclick="openHtmlPageInDiv(event)">Medicines</a>
+                                        <a href="/categories/explore/react-forum.html" class="nav__dropdown-item temp" onclick="openHtmlPageInDiv(event)">Lab Test</a>
+                                        <a href="/categories/explore/react-forum.html" class="nav__dropdown-item temp" onclick="openHtmlPageInDiv(event)">Surgeries</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+<!-- 
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-bookmark nav__icon' ></i>
+                                <span class="nav__name temp">Saved</span>
+                            </a> -->
+                            
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-location-plus nav__icon' ></i>
+                                <span class="nav__name temp">Loaction</span>
+                            </a>
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-message-alt-error nav__icon' ></i>
+                                <span class="nav__name temp">Securiy and Help</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- login text -->
+
+                <a href="/categories/loginpage/index.html" class="nav__link nav__logout"  onclick="openHtmlPageInDiv(event)">
+                    
+                    <i class='bx bx-log-in nav__icon' ></i>
+                    <span class="nav__name temp">Log In</span>
+                    
+                </a>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <header class="header " >
+                <div class="header__container">
+                    
+                    <a href="#" class="header__logo"><b>JustAsk</b></a>
+        
+                    <div class="header__search">
+                        <input type="search" placeholder="Search" class="header__input">
+                        <button class='bx bx-search header__icon'>    
+                        </button>
+    
+                        </i>
+                    </div>
+                    <div>
+                        <button onclick="darkMode()" class="bx bx-moon">
+                        </button>
+                    </div>
+    
+                    <div class="header__toggle">
+                        <i class='bx bx-menu' id="header-toggle" ></i>
+                    </div>
+                </div>
+            </header>
+
+
+
+            <!-- <div>
+                <a href="#" onclick="loadHTML('template','template1.html')">Template 1</a>
+                <a href="#" onclick="loadHTML('template','template2.html')">Template 2</a>
+                <a href="#" onclick="loadHTML('template','notafile.html')">Not a file</a>
+            </div>
+            <div id="template">
+                This is where our template will go.
+            </div> -->
+            <div class="illustration forums" id="forums">
+                <section id="categories">
+                    <div class="illustration_1">
+                        <article class="card">
+                            <img
+                              class="card__background"
+                              src="https://img.freepik.com/premium-photo/international-doctors-day-illustration-doctorshappy-doctors-day-ai-generated_852336-18087.jpg"
+                              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                              width="1920"
+                              height="2193"
+                            />
+                            <div class="card__content | flow">
+                              <div class="card__content--container | flow">
+                                <h2 class="card__title">Colombia</h2>
+                                <p class="card__description">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                                  labore laudantium deserunt fugiat numquam.
+                                </p>
+                              </div>
+                              <button class="card__button">Read more</button>
+                            </div>
+                          </article>
+                        <!-- <img src="./assets/img/illustraion1.svg" alt="image"> -->
+                        
+                    </div>
+                    
+                
+                </section>
+                <!-- <iframe src="./categories/loginpage/index.html" style="height: 450px; width: 700px ; border: none;"   ></iframe> -->
+            </div>
+        </main>
+         <!--========== MAIN JS ==========-->
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
