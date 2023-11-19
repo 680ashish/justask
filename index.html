@@ -14,7 +14,6 @@
     </head>
     <body>
         <!--========== HEADER ==========-->
-        
 
         <!--========== NAV ==========-->
         <div class="nav" id="navbar">
@@ -28,6 +27,7 @@
                     <div class="nav__list">
                         <div class="nav__items">
                             <h3 class="nav__subtitle ">Profile</h3>
+
     
                             <a href="#" class="nav__link active">
                                 <i class='bx bx-home nav__icon' ></i>
@@ -53,7 +53,7 @@
                             <h3 class="nav__subtitle ">Menu</h3>
     
                             <div class="nav__dropdown">
-                                <a href="#" class="nav__link">
+                                <a  class="nav__link">
                                     <i class='bx bx-compass nav__icon' ></i>
                                     <span class="nav__name temp">Explore</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
@@ -61,21 +61,15 @@
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="/categories/explore/html-forum.html" class="nav__dropdown-item temp"  onclick="openHtmlPageInDiv(event)">HTML</a>
-                                        <a href="/categories/explore/css-forum.html" class="nav__dropdown-item temp"  onclick="openHtmlPageInDiv(event)">CSS</a>
-                                        <a href="/categories/explore/javascript-forum.html" class="nav__dropdown-item temp"  onclick="openHtmlPageInDiv(event)">JAVASCRIPT</a>
-                                        <a href="/categories/explore/react-forum.html" class="nav__dropdown-item temp" onclick="openHtmlPageInDiv(event)">REACT</a>
-                                        <a href="/categories/explore/react-forum.html" class="nav__dropdown-item temp" onclick="openHtmlPageInDiv(event)">PHP</a>
+                                        <a href="#html-forum" class="nav__dropdown-item temp"  >HTML</a>
+                                        <a href="./categories/explore/css-forum.html" class="nav__dropdown-item temp"  >CSS</a>
+                                        <a href="./categories/explore/javascript-forum.html" class="nav__dropdown-item temp"  >JAVASCRIPT</a>
+                                        <a href="./categories/explore/react-forum.html" class="nav__dropdown-item temp" >REACT</a>
+                                        <a href="./categories/explore/react-forum.html" class="nav__dropdown-item temp" >PHP</a>
                                     </div>
                                 </div>
 
                             </div>
-
-<!-- 
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-bookmark nav__icon' ></i>
-                                <span class="nav__name temp">Saved</span>
-                            </a> -->
                             
                             <a href="#" class="nav__link">
                                 <i class='bx bx-location-plus nav__icon' ></i>
@@ -83,14 +77,14 @@
                             </a>
                             <a href="#" class="nav__link">
                                 <i class='bx bx-message-alt-error nav__icon' ></i>
-                                <span class="nav__name temp">Securiy and Help</span>
+                                <span class="nav__name temp">Help ?</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <!-- login text -->
 
-                <a href="/categories/loginpage/index.html" class="nav__link nav__logout"  onclick="openHtmlPageInDiv(event)">
+                <a href="https://onepiece-login.netlify.app/" class="nav__link nav__logout">
                     
                     <i class='bx bx-log-in nav__icon' ></i>
                     <span class="nav__name temp">Log In</span>
@@ -134,39 +128,20 @@
             <div id="template">
                 This is where our template will go.
             </div> -->
+            
             <div class="illustration forums" id="forums">
                 <section id="categories">
-                    <div class="illustration_1">
-                        <article class="card">
-                            <img
-                              class="card__background"
-                              src="https://img.freepik.com/premium-photo/international-doctors-day-illustration-doctorshappy-doctors-day-ai-generated_852336-18087.jpg"
-                              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                              width="1920"
-                              height="2193"
-                            />
-                            <div class="card__content | flow">
-                              <div class="card__content--container | flow">
-                                <h2 class="card__title">Colombia</h2>
-                                <p class="card__description">
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                                  labore laudantium deserunt fugiat numquam.
-                                </p>
-                              </div>
-                              <button class="card__button">Read more</button>
-                            </div>
-                          </article>
-                        <!-- <img src="./assets/img/illustraion1.svg" alt="image"> -->
-                        
+                    <div class="home-area" id="home">
+                        this is the home area which will be loaded when you open the <br>site at first and everything will be loaded here .
                     </div>
-                    
-                
+
+
                 </section>
                 <!-- <iframe src="./categories/loginpage/index.html" style="height: 450px; width: 700px ; border: none;"   ></iframe> -->
             </div>
         </main>
          <!--========== MAIN JS ==========-->
-
+ 
         <script src="assets/js/main.js"></script>
     </body>
 </html>
