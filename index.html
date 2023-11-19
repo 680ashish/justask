@@ -29,21 +29,20 @@
                             <h3 class="nav__subtitle ">Profile</h3>
 
     
-                            <a href="#" class="nav__link active">
+                            <a href="#home" class="nav__link active" onclick="toggleSection('home')">
                                 <i class='bx bx-home nav__icon' ></i>
                                 <span class="nav__name temp">Home</span>
                             </a>
                             
                             <div class="nav__dropdown">
-                                <a href="#" class="nav__link">
+                                <a href="#your-profile" class="nav__link" onclick="toggleSection('your-profile')">
                                     <i class='bx bx-user nav__icon' ></i>
                                     <span class="nav__name temp">Your Profile</span>
                                 </a>
 
                             </div>
 
-                            <a href="#" class="nav__link">
-                                <!-- <i class='bx bx-message-rounded nav__icon' ></i> -->
+                            <a href="#forums" class="nav__link"  onclick="toggleSection('forums')">
                                 <i class='bx bx-book-content nav__icon' ></i>
                                 <span class="nav__name temp">Forums</span>
                             </a>
@@ -61,21 +60,21 @@
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="#html-forum" class="nav__dropdown-item temp"  >HTML</a>
-                                        <a href="./categories/explore/css-forum.html" class="nav__dropdown-item temp"  >CSS</a>
-                                        <a href="./categories/explore/javascript-forum.html" class="nav__dropdown-item temp"  >JAVASCRIPT</a>
-                                        <a href="./categories/explore/react-forum.html" class="nav__dropdown-item temp" >REACT</a>
-                                        <a href="./categories/explore/react-forum.html" class="nav__dropdown-item temp" >PHP</a>
+                                        <a href="#html-forum" class="nav__dropdown-item temp" onclick="toggleSection('html')" >HTML</a>
+                                        <a href="#css-forum" class="nav__dropdown-item temp" onclick="toggleSection('css')" >CSS</a>
+                                        <a href="#javascript-forum" class="nav__dropdown-item temp"  onclick="toggleSection('javascript')">JAVASCRIPT</a>
+                                        <a href="#react-forum" class="nav__dropdown-item temp" onclick="toggleSection('react')">REACT</a>
+                                        <a href="#php-forum" class="nav__dropdown-item temp"  onclick="toggleSection('php')">PHP</a>
                                     </div>
                                 </div>
 
                             </div>
                             
-                            <a href="#" class="nav__link">
+                            <a href="#" class="nav__link"  onclick="toggleSection('tour')">
                                 <i class='bx bx-location-plus nav__icon' ></i>
                                 <span class="nav__name temp">Tour</span>
                             </a>
-                            <a href="#" class="nav__link">
+                            <a href="#" class="nav__link"  onclick="toggleSection('help')">
                                 <i class='bx bx-message-alt-error nav__icon' ></i>
                                 <span class="nav__name temp">Help ?</span>
                             </a>
@@ -131,8 +130,45 @@
             
             <div class="illustration forums" id="forums">
                 <section id="categories">
-                    <div class="home-area" id="home">
+                    <div class="home-area profile" id="home">
                         this is the home area which will be loaded when you open the <br>site at first and everything will be loaded here .
+                    </div>
+                    <!-- profile section -->
+                    <div class="your-profile profile" >
+                        <p>my profile</p>
+                        
+                    </div>
+                    <div class="forums ">
+                        
+                    </div>
+
+                    <!-- explore area -->
+
+                    <div class="explore">
+                    <!-- html -->
+                    <div id="html" class="explore-category html">
+                        <p>this is html section</p>
+                    </div>
+                    <!-- css -->
+                    <div id="css" class="explore-category css">
+                        <p>this is css section</p>
+                    </div>
+                    <!-- js -->
+                    
+                    <div id="javascript" class="explore-category javascript">
+                        <p>this is javascript section</p>
+                    </div>
+                    <!-- react -->
+                    
+                    <div id="react" class="explore-category react">
+                        <p>this is react section</p>
+                    </div>
+                    <!-- php -->
+                    
+                    <div id="php" class="explore-category php">
+                        <p>this is php section</p>
+                    </div>
+
                     </div>
 
 
