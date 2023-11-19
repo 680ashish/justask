@@ -72,4 +72,11 @@ function openHtmlPageInDiv(event) {
       .then(html => (divElement.innerHTML = html));
   }
   
-  
+  function toggleSection(sectionId) {
+    var sections = ["home", "html", "css", "javascript", "react", "php", "your_profile", "forums", "tour", "help"];
+
+    sections.forEach(function (id) {
+      var element = document.getElementById(id);
+      element.style.display = id === sectionId ? "inline" : "none";
+    });
+  }
