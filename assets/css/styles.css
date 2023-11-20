@@ -477,17 +477,24 @@ p{
   .nav-shift2{
     display: flex;
   }
+  .line{
+    width: 15rem;
+  }
+
 }
 @media screen and (max-width: 320px) {
   .header__search {
     width: 80%;
   }
+
+
 }
 
 @media screen and (min-width: 768px) {
   /* body {
     padding: 1rem 3rem 0 6rem;
   } */
+
   .header {
     padding: 0 3rem 0 6rem;    
   }
