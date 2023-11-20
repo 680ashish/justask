@@ -10,7 +10,7 @@
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>justask</title>
+        <title>ResQue</title>
     </head>
     <body>
         <!--========== HEADER ==========-->
@@ -21,12 +21,12 @@
                 <div class="temp">
                     <a href="#" class="nav__link nav__logo">
                         <i class='bx bxs-disc nav__icon' ></i>
-                        <span class="nav__logo-name temp">JustAsk</span>
+                        <span class="nav__logo-name temp">ResQue</span>
                     </a>
     
                     <div class="nav__list">
                         <div class="nav__items">
-                            <h3 class="nav__subtitle ">Profile</h3>
+                            <h3 class="nav__subtitle " id="showit">Profile</h3>
 
     
                             <a href="#home" class="nav__link active" onclick="toggleSection('home')">
@@ -97,7 +97,7 @@
             <header class="header " >
                 <div class="header__container">
                     
-                    <a href="#" class="header__logo"><b>JustAsk</b></a>
+                    <a href="#" class="header__logo"><b>ResQue</b></a>
         
                     <div class="header__search">
                         <input type="search" placeholder="Search" class="header__input">
@@ -129,10 +129,46 @@
             </div> -->
             
             <div class="illustration forums" id="forums">
+
                 <section id="categories">
-                    <div class="home-area profile" id="home">
-                        this is the home area which will be loaded when you open the <br>site at first and everything will be loaded here .
+                <div class="home-area" id="home">
+                    <div class="skeleton-loader" id="skeleton-loader">
+                            <div class="container">
+                                <div class="post">
+                                    <div class="avatar"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                  </div>
+                                  <div class="post">
+                                    <div class="avatar"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                  </div>
+                                  <div class="post">
+                                    <div class="avatar"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                  </div>
+                                  <div class="post">
+                                    <div class="avatar"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                  </div>
+
+                                  
+                              </div>
+                            <!-- this is the home area which will be loaded when you open the site at first and everything will be loaded here . -->
                     </div>
+                        
+                </div>
                     <!-- profile section -->
                     <div class="your-profile profile" >
                         <p>my profile</p>
@@ -179,5 +215,7 @@
          <!--========== MAIN JS ==========-->
  
         <script src="assets/js/main.js"></script>
+        
+        
     </body>
 </html>
