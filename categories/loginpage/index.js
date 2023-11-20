@@ -4,17 +4,38 @@ const loginSuccessPopup = document.getElementById('login-success-popup');
 
 // Add an event listener to the form submission
 loginForm.addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent the form from submitting and refreshing the page
+    e.preventDefault(); // Prevent the form from submitting
 
-    // You can add your login logic here
-    // For this example, we'll simulate a successful login after a brief delay
-    setTimeout(function () {
-        // Show the login success popup
+    // Get form elements
+    var usernameInput = document.getElementById('username');
+    var passwordInput = document.getElementById('password');
+
+    // Get error elements
+    var usernameError = document.getElementById('username-error');
+    var passwordError = document.getElementById('password-error');
+
+    // Reset previous error messages
+    usernameError.textContent = '';
+    passwordError.textContent = '';
+
+    // Validate username
+    if (usernameInput.value.trim() === '') {
+        usernameError.textContent = 'Username is required.';
+    }
+
+    // Validate password
+    if (passwordInput.value.trim() === '') {
+        passwordError.textContent = 'Password is required.';
+    }
+
+    // If no errors, you can submit the form or display a success message
+    if (usernameError.textContent === '' && passwordError.textContent === '') {
+        // Display success message or submit the form
         loginSuccessPopup.style.display = 'block';
 
-        // Hide the popup after a few seconds (you can adjust the delay)
+        // Redirect to the main page after a few seconds (adjust the delay as needed)
         setTimeout(function () {
-            loginSuccessPopup.style.display = 'none';
-        }, 1500); // Hide after 3 seconds
-    }, 100); // Simulate login success after 1 second (adjust as needed)
+            window.location.href = 'file:///D:/Downloads/justask-main/justask-main/index.html';
+        }, 1500); // Redirect after 1.5 seconds
+    }
 });
