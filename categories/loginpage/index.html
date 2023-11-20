@@ -23,23 +23,26 @@
     </section>
    
     <div class="container">
-        <div class="forms-container">
+      <div class="forms-container">
           <div class="signin-signup">
-            <form action="" class="sign-in-form" id="login-form">
-              <h2 class="title">Welcome back!</h2>
-              <div class="input-field">
-                <i class="fas fa-user"></i>
-                  <input type="text" placeholder="Username" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-lock"></i>
-                  <input type="password" placeholder="Password" />
-              </div>
-                <input type="submit" value="Login" class="btn solid" />
-              </div>
-            </form>
+              <form action="#" class="sign-in-form" id="login-form">
+                  <h2 class="title">Welcome back!</h2>
+                  <div class="input-field">
+                      <i class="fas fa-user"></i>
+                      <input type="text" id="username" placeholder="Username" />
+                      <p id="username-error" class="error-message"></p>
+                  </div>
+                  <div class="input-field">
+                      <i class="fas fa-lock"></i>
+                      <input type="password" id="password" placeholder="Password" />
+                      <p id="password-error" class="error-message"></p>
+                  </div>
+                  <input type="submit" value="Login" class="btn solid" />
+              </form>
+          </div>
       </div>
-    </div>
+  </div>
+
     <!-- popup for login -->
     <div id="login-success-popup" class="popup">
       <p>You are successfully logged in!</p>
