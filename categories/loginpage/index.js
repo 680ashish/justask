@@ -35,7 +35,7 @@ loginForm.addEventListener('submit', function (e) {
 
         // Redirect to the main page after a few seconds (adjust the delay as needed)
         setTimeout(function () {
-            window.location.href = 'file:./justask-main/index.html';
+            window.location.href = './justask-main/index.html';
         }, 1500); // Redirect after 1.5 seconds
     }
 });
